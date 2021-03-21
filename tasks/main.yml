@@ -1,0 +1,9 @@
+---
+- name: download discord .deb
+  get_url:
+    url: "{{ discord_download_url }}"
+    dest: "{{ discord_download_dest }}"
+
+- name: execute discord .deb
+  apt:
+    deb: "{{ discord_download_dest }}"
