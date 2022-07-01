@@ -7,3 +7,4 @@
 - name: execute discord .deb
   apt:
     deb: "{{ discord_download_dest }}"
+  become: true
