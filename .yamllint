@@ -5,3 +5,8 @@ rules:
   line-length:
     max: 200
     level: warning
+
+ignore: |
+  .github/stale.yml
+  .travis.yml
+  tests/
